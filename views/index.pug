@@ -3,8 +3,8 @@ extends layout
 block main
     form#payment-form(action="/submit", method="post")
         .form-row
-            label(for="donation-amount") Donation amount
-            input(id="donation-amount", type="number")
+            label Donation amount
+            input(name="donation-amount", type="number")
 
             label(for="card-element") Credit or debit card
             #card-element
