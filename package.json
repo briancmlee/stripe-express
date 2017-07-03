@@ -1,0 +1,19 @@
+{
+  "name": "stripe-express",
+  "version": "0.0.0",
+  "description": "stripe payment handling with express and node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/briancmlee/stripe-express.git"
+  },
+  "author": "Brian Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/briancmlee/stripe-express/issues"
+  },
+  "homepage": "https://github.com/briancmlee/stripe-express#readme"
+}
