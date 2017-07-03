@@ -1,4 +1,13 @@
 extends layout
 
 block main
-    h2 Working
+    form.payment-form(action="/submit", method="post")
+        .form-row
+            label(for="donation-amount") Donation amount
+            input(id="donation-amount", type="number")
+
+            label(for="card-element") Credit or debit card
+            #card-element
+
+            #card-errors
+        button(type="submit") Submit
