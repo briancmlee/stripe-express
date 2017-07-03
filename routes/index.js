@@ -11,17 +11,19 @@ router.get("/", (req, res) => {
 router.post("/submit", (req, res) => {
     const body = req.body;
 
-    const donationAmount = body["donation-amount"];
+    const donationAmount = parseFloat(body["donation-amount"]);
     const token = body["stripeToken"];
 
     let charge = stripe.charges.create({
-        amount: donationAmount,
+        amount: parseInt(donationAmount * 100),
         currency: "aud",
         description: "test charge",
         source: token
     }, (err, charge) => {
 
     });
+
+    res.render("submit", { donationAmount : donationAmount })
 });
 
 module.exports = router;
