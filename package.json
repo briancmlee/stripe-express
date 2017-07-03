@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/briancmlee/stripe-express/issues"
   },
-  "homepage": "https://github.com/briancmlee/stripe-express#readme"
+  "homepage": "https://github.com/briancmlee/stripe-express#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "pug": "^2.0.0-rc.2"
+  }
 }
